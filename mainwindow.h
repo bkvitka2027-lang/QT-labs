@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+<<<<<<< HEAD
 #include "Converter.h"
 
 QT_BEGIN_NAMESPACE
@@ -11,6 +12,11 @@ class QLineEdit;
 class QComboBox;
 class QDoubleValidator;
 QT_END_NAMESPACE
+=======
+#include <QTabWidget>
+#include <QLineEdit>
+#include <QComboBox>
+>>>>>>> fdccab4731117b96d59bb5faf2cb18834e6859f2
 
 class MainWindow : public QMainWindow
 {
@@ -20,6 +26,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+<<<<<<< HEAD
 private slots:
     void onTopTextEdited();
     void onBottomTextEdited();
@@ -51,6 +58,23 @@ private:
         UnitType type;
     };
     TabData m_tabs[3];
+=======
+private:
+    QTabWidget *tabWidget;
+
+    QLineEdit *lineLengthFrom, *lineLengthTo;
+    QComboBox *comboLengthFrom, *comboLengthTo;
+
+    QLineEdit *lineMassFrom, *lineMassTo;
+    QComboBox *comboMassFrom, *comboMassTo;
+
+    QLineEdit *lineTempFrom, *lineTempTo;
+    QComboBox *comboTempFrom, *comboTempTo;
+
+    void setupUI();
+    void setupComboBoxes();
+    void setupValidators();
+>>>>>>> fdccab4731117b96d59bb5faf2cb18834e6859f2
 };
 
 #endif

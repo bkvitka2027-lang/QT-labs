@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.16)
 
+<<<<<<< HEAD
 project(Convectorapp VERSION 0.1 LANGUAGES CXX)
+=======
+project(workst2 VERSION 0.1 LANGUAGES CXX)
+>>>>>>> fdccab4731117b96d59bb5faf2cb18834e6859f2
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -19,6 +23,7 @@ set(PROJECT_SOURCES
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+<<<<<<< HEAD
     qt_add_executable(Convectorapp
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
@@ -38,11 +43,25 @@ else()
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
         add_executable(Convectorapp
+=======
+    qt_add_executable(workst2
+        MANUAL_FINALIZATION
+        ${PROJECT_SOURCES}
+    )
+else()
+    if(ANDROID)
+        add_library(workst2 SHARED
+            ${PROJECT_SOURCES}
+        )
+    else()
+        add_executable(workst2
+>>>>>>> fdccab4731117b96d59bb5faf2cb18834e6859f2
             ${PROJECT_SOURCES}
         )
     endif()
 endif()
 
+<<<<<<< HEAD
 target_link_libraries(Convectorapp PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -52,6 +71,14 @@ if(${QT_VERSION} VERSION_LESS 6.1.0)
   set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.Convectorapp)
 endif()
 set_target_properties(Convectorapp PROPERTIES
+=======
+target_link_libraries(workst2 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+
+if(${QT_VERSION} VERSION_LESS 6.1.0)
+  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.workst2)
+endif()
+set_target_properties(workst2 PROPERTIES
+>>>>>>> fdccab4731117b96d59bb5faf2cb18834e6859f2
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -60,12 +87,20 @@ set_target_properties(Convectorapp PROPERTIES
 )
 
 include(GNUInstallDirs)
+<<<<<<< HEAD
 install(TARGETS Convectorapp
+=======
+install(TARGETS workst2
+>>>>>>> fdccab4731117b96d59bb5faf2cb18834e6859f2
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
+<<<<<<< HEAD
     qt_finalize_executable(Convectorapp)
+=======
+    qt_finalize_executable(workst2)
+>>>>>>> fdccab4731117b96d59bb5faf2cb18834e6859f2
 endif()
