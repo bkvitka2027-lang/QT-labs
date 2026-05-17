@@ -1,0 +1,9 @@
+# ninja log v6
+27	3500	8007387521912940	work4_autogen/timestamp	9b61f9e2173bdd06
+27	3500	8007387521912940	work4_autogen/mocs_compilation.cpp	9b61f9e2173bdd06
+27	3500	8007387521912940	C:/work4/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/work4_autogen/timestamp	9b61f9e2173bdd06
+27	3500	8007387521912940	C:/work4/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug/work4_autogen/mocs_compilation.cpp	9b61f9e2173bdd06
+3512	15936	8007387524091333	CMakeFiles/work4.dir/work4_autogen/mocs_compilation.cpp.obj	11b8fd4c25651be0
+3520	15958	8007387524163473	CMakeFiles/work4.dir/main.cpp.obj	a0a0a5a4808ea805
+3526	16626	8007387524233319	CMakeFiles/work4.dir/mainwindow.cpp.obj	abc7b3fa7c3e80b3
+16627	18061	8007387655228633	work4.exe	682307b3f1dac27a

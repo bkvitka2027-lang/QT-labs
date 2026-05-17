@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c2c0c3543850e483728b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "work4",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "work4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-work4-Debug-5aae51e64ddcf31071be.json",
+					"name" : "work4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "work4_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-work4_autogen-Debug-2107608cc9139782660c.json",
+					"name" : "work4_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "work4_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-work4_autogen_timestamp_deps-Debug-d6bda41be6726a96d1b4.json",
+					"name" : "work4_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/work4/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debug",
+		"source" : "C:/work4"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
